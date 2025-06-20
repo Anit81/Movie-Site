@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0px;
+}
+
+.begining{
+  color: rgb(219, 219, 33);
+  font-size:11px;
+  font-weight: 650;
+  padding-bottom: 10px;
+}
+.create-accounts{
+color: rgb(22, 19, 19);
+  font-weight: 560;
+}
+.movie-tv{
+  font-size: 8px;
+  color: rgb(36, 35, 35);
+  padding-bottom: 30px;
+}
+.email-sign{
+  background-color: white;
+  padding-top: 10px;
+}
+.inputss1, .inputss2, .inputss3{
+  display: block;
+  padding: 13px;
+  width: 90%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(206, 187, 187);
+
+}
+.inputss1, .inputss2, .inputss3:focus{
+  outline: none;
+}
+
+.inputss1, .inputss2, .inputss3::placeholder{
+font-size: 8px;
+background-color: (206, 187, 187);
+}
+.create-account{
+  display: block;
+  margin-top: 15px;
+  background-color: rgb(5, 4, 4);
+  color: white;
+  padding-bottom:9px ;
+  padding-top:9px ;
+  width: 90%;
+  border: none;
+  border-radius: 8px;
+  font-size: 8px;
+}
+.already{
+  color: black;
+  font-size: 8px;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 13px;
+}
+.instead-use1{
+  padding-left: 40%;
+  font-size: 1px;
+  border-bottom: 1px solid rgb(206, 187, 187);
+  text-align: center;
+}
+.instead-use3{
+  padding-left: 45%;
+  font-size: 1px;
+  border-bottom: 1px solid rgb(206, 187, 187);
+  text-align: center;
+}
+.instead-use2{
+font-size: 8px;
+text-align: center;
+}
+.backImg{
+  background-image: url(../image/cv.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: cover;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  
+}
+.email-img{
+width: 90%;
+  border-radius: 20px;
+ 
+}
+.email-page{
+  display: grid;
+  grid-template-columns: 220px 240px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.discovery{
+  color: white;
+  font-weight: 700;
+  font-size: 9px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.incredible{
+  color: rgb(250, 244, 244);
+  font-size: 6.3px;
+  padding-left: 14px;
+  padding-bottom: 17px;
+  font-weight: 800;
+}
+button{
+  
+  background-color: rgb(19, 18, 18);
+  color: white;
+  font-size: 7px;
+  margin-left: 25px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 10px;
+  border: 1px solid white;
+
+  
+}
+.
+
+  
+ 
