@@ -21,25 +21,27 @@
                 <li><a href="#Top-rated">Top Rated</a></li>
                 <li><a href="#Tv-series">Tv Series</a></li>
                 <li><a href="#Pricing">Pricing</a></li>
-                <li class="signIn"><a href="sign.html">SIGN IN</a></li>
                </ul>
              </nav>
           </div>
+          <div class="hambugerSelect">
          <select>
           <option value="en">EN</option>
          </select>
-      </div>
-
-      <div onclick="toggleMenu()" class="handbuger-menue">
+         <div class="handbuger-menue  menue-toggle" >
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
       </div>
+          </div>
+      </div>
+      
 
       <div class="flexStream">
           <p class="fs">FlexStream</p>
           <P class="unlimitedOffer">Unlimited <span>Movie</span>,TVs Shows, & More.</P>
           <button class="pg">PG 18</button>
+      
           <span class="hd">HD</span>
           <span class="romance">Romance,Drama</span>
           <span class="year">2022</span>
@@ -430,38 +432,38 @@
             <p class="standard">Basic </p> 
             <p  class="better-result">starter</p>
             <p class="dollar">$99<span> /month</span></p>
-            <p class="free-streaming">Ad-free Streaming</p>
-            <p class="video-quality">1080p video quality</p>
-            <p class="signin">2 signin devices</p>
-            <p class="movie-download">30 movies Download</p>
-            <p class="casting">Casting</p>
+            <p class="free-streaming">✓ Ad-free Streaming</p>
+            <p class="video-quality">✓ 1080p video quality</p>
+            <p class="signin">✓ 2 signin devices</p>
+            <p class="movie-download">✓ 30 movies Download</p>
+            <p class="casting">✓ Casting</p>
             <button class="get-started">Get Started</button>
          </div>
          <div class="basicStater">
             <p class="standard">Standard</p>
             <p class="better-result">Better results</p>
             <p class="dollar">$299<span> /month</span></p> 
-            <p class="free-streaming">Ad-free Streaming</p>
-            <p  class="video-quality">4k video quality</p>
-            <p class="signin">4 signin devices</p>
-            <p class="movie-download">90 movies Download</p>
-            <p class="casting">Supports Casting</p>
+            <p class="free-streaming">✓ Ad-free Streaming</p>
+            <p  class="video-quality">✓ 4k video quality</p>
+            <p class="signin">✓ 4 signin devices</p>
+            <p class="movie-download">✓ 90 movies Download</p>
+            <p class="casting">✓ Supports Casting</p>
             <button class="get-started">Get Started</button>
         </div>
         <div class="basicStater">
             <p class="standard">Premium</p>
             <p  class="better-result">Go all in one</p>
             <p class="dollar">$499 <span>/month</span></p>
-            <p class="free-streaming">Ad-free Streaming</p>
-            <p  class="video-quality">8k video quality</p>
-            <p class="signin">7 signing devices</p>
-            <p  class="movie-download">Unlimited Downloads</p>
-            <p  class="casting">Supports multicasting</p>
+            <p class="free-streaming">✓ Ad-free Streaming</p>
+            <p  class="video-quality">✓ 8k video quality</p>
+            <p class="signin">✓ 7 signing devices</p>
+            <p  class="movie-download">✓ Unlimited Downloads</p>
+            <p  class="casting">✓ Supports multicasting</p>
             <button class="get-started">Get Started</button>
         </div>
       </div>
 
-            <p class="premium">why go premium?</p>
+      
         <div class="multiple-device">
               <div class="cloud-img">
                 <img src="image/download (9).png" alt="">
@@ -490,14 +492,14 @@
               <p class="first-30days">TRIAL START FIRST 30 DAYS.</p>
               <p class="restart-mentorship">Enter your email to create or restart your mentorship.</p>
           </div>
-          <div>
+          <div class="input-fields">
           
               <input class="input-element" type="text" placeholder="Type your email"  >
               <button class="input-button">GET STARTED</button>
           </div>
       </div>
     </section>
-
+     
 
   <div class="all">
       <div class="secCointainer">
@@ -505,7 +507,7 @@
             <img src="image/favicon-192.png" alt="flexstream">
             <span class="footer-stream">FlexStream</span>
           </div>
-
+         <div class="grouping-links">
           <div class="fot-links">
             <nav>
               <ul>
@@ -516,7 +518,7 @@
               </ul>
            </nav>
         
-        
+          </div>
         </div>
     </div>
           <span class="line-through"></span>
@@ -542,19 +544,53 @@
         </div>
      </div>
   </div>
+  
         <div class="general-footer">
             <footer>@2025 <span class="reserved">FlexStream</span>. All Rights Reserved</footer>
             <img src="image/footer-bottom-img.png" alt="">
         </div>
   
         
-        
-      
+   <!---- 
+   <script src="sgnin.js"></script>
+      --->
+
   <script>
-    function toggleMenu() {
-      const linkss = document.getElementById("linkss");
-      linkss.style.display = linkss.style.display === "block" ? "none" : "block";
-    }
+    
+
+
+
+const linkss = document.getElementById("linkss");
+const menueToggle = document.querySelector(".menue-toggle");
+
+menueToggle.addEventListener("click", function (e) {
+  e.stopPropagation();
+  linkss.style.display = "block";
+});
+
+document.addEventListener("click", function (e) {
+  //  Only hide the menu when screen is small (mobile view)
+  if (
+    window.innerWidth < 768 && 
+    e.target !== linkss &&
+    !linkss.contains(e.target) &&
+    e.target !== menueToggle &&
+    !menueToggle.contains(e.target)
+  ) {
+    linkss.style.display = "none";
+  }
+});
+// Reset menu display when screen is resized to large
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    // Remove the inline display so CSS can control it
+    linkss.style.display = "";
+  }
+});
+
+
   </script>
+  
+
 </body>
 </html>

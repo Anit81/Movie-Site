@@ -1,6 +1,5 @@
 *{
-  margin: 0px;
-  padding: 0px;
+   box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
@@ -8,28 +7,35 @@ html{
 body{
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(31, 29, 29);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+
 }
 
- 
-.container{
+ .container{
   background-image: url(../image/hero-bg.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   height: 93vh;
-  padding-bottom: 36px;
-  padding-left: 19px;
+  padding-bottom: 50%;
+  padding-left: 39px;
   padding-top: 10px;
 }
 .container img{
-  width:20px;
+  width:50px;
 }
+
 .container span{
   color: white;
 }
 .flex{
-   font-size: 9px;
+   font-size: 25px;
    font-weight: 600;
+   
 }
 .logo-link{
   display: flex;
@@ -52,9 +58,9 @@ body{
   text-decoration: none;
   color: white;
   display: flex;
-  margin: 5px;
+  margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 8px;
+  font-size: 18px;
   font-weight: 600;
 }
 .linkss nav a:hover{
@@ -63,9 +69,9 @@ body{
 }
 .signIn{
   border: 1px solid yellow;
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .signIn:hover{
   background-color: yellow;
@@ -76,8 +82,9 @@ select{
    background:none;
    border: none;
    font-family: Arial, Helvetica, sans-serif;
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 600;
+  margin-right: 15px;
 }
 
 .flexStream{
@@ -88,16 +95,17 @@ select{
 .fs{
   color: yellow;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1px;
 }
 .unlimitedOffer{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px;
+  font-size: 53px;
   font-weight: 900;
   color: white;
   width: 50%;
+  line-height: 55px;
 }
 .unlimitedOffer span{
   color: yellow;
@@ -107,27 +115,26 @@ select{
 .unlimitedOffer button{
   font-size: 2px;
 }
-.pg
-{
+.pg{
   background: rgb(204, 197, 197);
   color: black;
-  font-size: 5px;
+  font-size: 12px;
   font-weight: 800;
   border: none;
-  padding: 3px;
+  padding: 5px;
   text-align: center;
 }
 .hd{
   border: 2px solid rgb(204, 197, 197);
-  font-size: 5px;
+  font-size: 12px;
   font-weight: 900;
-  padding: 1px;
+  padding: 5px;
   text-align: center;
 }
 .romance,
 .year,
 .num{
-  font-size: 7px;
+  font-size: 18px;
   font-weight: 600;
   padding: 3px;
   text-align: center;
@@ -135,13 +142,13 @@ select{
 }
 .watch{
   display: block;
-  border: 1px solid yellow;
-  margin-top: 20px;
-  border-radius: 15px;
-  padding: 5px 20px;
+  border: 2px solid yellow;
+  margin-top: 47px;
+  border-radius: 29px;
+  padding: 10px 28px;
   background: none;
   color: white;
-  font-size: 6px;
+  font-size: 16px;
   font-weight: 600;
   
 }
@@ -151,60 +158,60 @@ select{
   
 }
 
-.streams{
-  margin-left: 19px;
-  margin-right: 19px;
+ .streams {
   display: grid;
- /*grid-template-columns: 172px 172px 172px 172px;*/
-  grid-template-columns: 121px 121px 121px 121px; 
-  color: white;
-  row-gap: 7px;
-  column-gap: 12px;
-  
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+ row-gap: 40px;
+  column-gap: 30px;
+  margin: 0 19px;
+  padding-bottom: 80px;
 }
+
 
 .streams-name{
   display: flex;
   justify-content: space-between;
-  font-size: 6px;
+  font-size: 19px;
   font-weight: 1000;
   display: flex;
   justify-content: space-between;
-  
+  color: white;
   
 }
 .stream-num{
   display: flex;
   justify-content: space-between;
-  font-size: 5px;
+  font-size: 12px;
   font-weight: 1000;
   display: flex;
   justify-content: space-between;
+  color: white;
   
   
 }
 .streamings{
-  padding-top:65px;
+  padding-top:100px;
   padding-bottom: 35px; 
   
 }
 .onlineStreaming{
   color: rgb(247, 247, 5);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 900;
   margin-left: 20px;
   margin-bottom: 3px;
 }
 
 .upcoming{
-  
+  display: flex;
   color: white;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
-  
+  padding-bottom: 20px;
+  align-items: center;
 }
 .streamingButtons{
   display: flex;
@@ -214,12 +221,12 @@ select{
 
 .buttonsDiv{
   border:1px solid yellow ;
-  border-radius: 14px;
-  padding-right: 11px;
-  padding-left: 11px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 7px;
+  border-radius: 20px;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
   font-weight: 900;
   color: white;
   background-color: black;
@@ -229,12 +236,12 @@ select{
   border:1px solid white ;
   margin-left:7px;
   margin-right: 7px;
-  border-radius: 14px;
-  padding-right: 11px;
-  padding-left: 11px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 7px;
+  border-radius: 20px;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 12px;
   font-weight: 900;
   color: white;
   background-color: black;
@@ -242,12 +249,12 @@ select{
 }
 .buttonsDiv3{
   margin-right:25px;
-  border-radius: 14px;
-  padding-right: 11px;
-  padding-left: 11px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 7px;
+  border-radius: 20px;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 12px;
   font-weight: 900;
   color: white;
   background-color: black;
@@ -258,13 +265,13 @@ select{
 }
 .type{
   color: yellow;
-  background-color: black;
+  background-color: rgb(29, 27, 27);
   border: 1.5px solid rgb(253, 242, 242);
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 2px;
-  padding-bottom: 2px;
-  font-size: 5px;
+ 
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -284,13 +291,14 @@ justify-content: center;
 
 .btn-download span{
  display: flex;
- padding-left: 15px;
- padding-right:15px;
+ padding-left: 25px;
+ padding-right:25px;
  align-items: center;
- font-size: 4px;
- padding-top: 4px;
+ text-align: center;
+ font-size: 12px;
+ padding-top: 10px;
  border: none;
- line-height: 5px;
+
 }
 .service-span{
   background-color:  yellow;
@@ -302,27 +310,25 @@ justify-content: center;
 .servicePara{
  font-size: large;
  color: white;
- font-size: 9px;
+ font-size: 17px;
  font-weight: 600;
  text-align: center;
 }
 
 .service-general{
   display: grid;
- /*grid-template-columns: 350px 400px; */
-  /* grid-template-columns: 250px 200px; */
-    grid-template-columns: 250px 250px; 
-  margin-top: 40px;
+grid-template-columns: 1fr 1fr; 
   background-color: black;
-  padding-top: 70px;
+  padding-top: 90px;
   margin-left: 15px;
+  padding-bottom: 45px;
  
 }
 .service-img{
   padding-bottom: 55px;
 }
 .ourService{
-  width: 78%;
+  width: 69%;
  
 }
 
@@ -330,14 +336,15 @@ justify-content: center;
   width: 10px;
 }
 .download, .offline{
-  font-size:13px ;
+  font-size:37px ;
   color: white;
   font-weight: 600;
+  line-height: 1px;
 }
 .elevate{
   margin-top: 10px;
   color: white;
-  font-size: 7.7px;
+  font-size: 20px;
 }
 .line{
 
@@ -353,21 +360,24 @@ justify-content: center;
 
 .enjoy{
   color: white;
-  font-size: 8px;
+  font-size: 18px;
   font-weight: 700;
-  margin-left: 60px;
-  margin-top: 15px;
+  
+  margin-top: 1px;
+  margin-left: 99px;
+  margin-bottom: 1px;
 }
 
 .immerse{
   color: white;
-  font-size: 7px;
+  font-size: 20px;
   font-weight: 100;
+  margin-top: 0px;
 }
 .img-images{
-  width:15px;
-  height:15px;
-  border:1.5px dashed yellow;
+  width:90px;
+  
+  border:2px dashed yellow;
   border-radius: 50%;
   line-break: 20px;
   padding: 10px;
@@ -376,10 +386,11 @@ justify-content: center;
 }
 .watchss{
   color: white;
-  font-size: 8px;
+  font-size: 18px;
   font-weight: 700;
-  margin-left: 60px;
-  margin-top: 5px;
+  margin-left: 99px;
+  margin-bottom: 1px;
+  line-height: 2px;
 
 }
 .watch-div, .immerse-div{
@@ -388,35 +399,35 @@ justify-content: center;
   
 }
 .img-image{
-  width: 17px;
-  border:1.5px dashed yellow;
-  border-radius: 30px;
+  width: 90px;
+  border:2px dashed yellow;
+  border-radius: 50px;
   line-break: 20px;
   padding: 10px;
   font-size: 6px;
 }
 .magic{
   color: white;
-  font-size: 7px;
+  font-size: 20px;
   margin-left: 12px;
   font-weight: 100;
 
 }
 .on-streaming{
   color: yellow;
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
-  padding-top: 50px;
-  
+  padding-top: 80px;
 }
 .top-rated{
   text-align: center;
   color: white;
-  font-size: 21px;
+  font-size: 35px;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 69px;
+  line-height: 1px;
 }
 
 .online-buttons{
@@ -426,14 +437,14 @@ justify-content: center;
 }
 
 .online-buttons button{
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   color: white;
   background-color: black;
   border: none;
-  padding: 8px;
+  padding: 17px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 49px;
 }
 .onlineBtn1{
   margin-left: 15px;
@@ -443,40 +454,44 @@ justify-content: center;
   margin-right: 15px;
 }
 .general-overall{
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .best-series{
   color: rgb(211, 211, 52);
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 5px;
+  margin-top: 55px;
 }
 .world-series{
   color: white;
-  font-size: 18px;
+  font-size: 34px;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
+  line-height: 1px;
 }
 .general-overall2{
   padding-top: 50px;
- background-color: black;
+ background-color:black;
  padding-bottom: 50px;
 }
 .pricing-plans{
   color: rgb(238, 238, 0);
-  font-size: 5px;
+  font-size: 14px;
   font-weight:800;
   text-align: center;
   padding-bottom: 4px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .get-premium{
   color: white;
-  font-size: 13px;
+  font-size: 31px;
   font-weight: 900;
   text-align: center;
+  line-height: 1px;
+  margin-top: 0px;
+  margin-bottom: 79px;
 }
 .annually{
   display: flex;
@@ -485,190 +500,254 @@ justify-content: center;
   margin-top: 20px;
   
 }
-.bob-checked{
+
+/* for styling the bob toggle switch*/
+
+.annually {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #444;
+  margin: 20px;
+}
+
+/* Hide the default checkbox */
+.bob-checked input {
+  display: none;
+}
+
+/* Style the toggle track */
+.bob-checked .checkeds {
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 30px;
   position: relative;
-  width: 40px;
-  height: 20px;
   display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.checkeds{
+
+/* The circle knob */
+.bob-checked .checkeds::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right:0;
-  bottom: 0;
-  background-color: black;
-  border: 1px solid yellow;
-  border-radius: 29px;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
-.checkeds::before{
-   content: "";
-   position:absolute ;
-   background-color:white;
-   height: 15px;
-   width: 14px;
-  
-   left: 1px;
-   bottom: 4px;
-   top: 2px;
-   border-radius:50%;
-}
-input:checked + .checkeds{
+
+/* When checked: move knob and change color */
+.bob-checked input:checked + .checkeds {
   background-color: yellow;
 }
-input:checked + .checkeds::before{
-  transform: translatex(24px);
+
+.bob-checked input:checked + .checkeds::before {
+  transform: translateX(24px);
 }
+
+/* Optional: highlight active text */
+.annually span {
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.bob-checked input:checked ~ .yearly {
+  font-weight: bold;
+  color: yellow;
+}
+
+.bob-checked input:not(:checked) ~ .monthly {
+  font-weight: bold;
+  color: yellow;
+}
+
 .monthly{
   margin-right: 18px;
-  font-size:8px;
+  font-size:22px;
   color: white;
 }
 .yearly{
   margin-left:18px ;
-  font-size: 8px;
+  font-size: 22px;
   color: white;
 }
+
 .basic-standard-streaming{
- display: flex;
- flex-direction: row;
- gap: 15px;
-  margin-top: 30px;
+ display: grid;
+ grid-template-columns: 400px 400px 400px;
+ column-gap: 38px;
+ row-gap: 20px;
+  margin-top: 70px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
+ padding-left: 20px;
+ padding-right: 20px;
+ text-align: center;
  
 }
+
 .basicStater{
   border: 0.1px solid  rgb(192, 188, 188) ;
   border-radius: 10px;
  align-items: center;
   background-color: rgb(19, 18, 18);
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 20px;
+padding-right: 20px;
  
 }
 
 .standard{
   color: white;
-  font-size: 10px;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
   padding-top: 18px;
+  line-height: 0;
 }
 
 .better-result{
-  padding-bottom: 9px;
-  font-size: 7px;
+  line-height: 0;
+  padding: 0px;
+  padding-bottom: 3px;
+  font-size: 17px;
   color: rgb(219, 219, 219);
   text-align: center;
 }
 .dollar{
   color: white;
-  font-size: 14px;
+  font-size: 29px;
   font-weight: 600;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
   text-align: center;
 }
 .dollar span{
-  font-size: 6px;
+  font-size: 16px;
   font-weight: 700;
 }
 .free-streaming, .video-quality, .signin, .movie-download{
   color: white;
-  font-size: 8px;
+  font-size: 19px;
   margin-bottom: 12px;
-  text-align: center;
-
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .casting{
   color: white;
-  font-size:8px;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size:18px;
+  margin-bottom: 51px;
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 80px;
+  
 }
+
+  
 .get-started{
-  margin-bottom: 18px;
+  margin-bottom: 38px;
   background-color: yellow;
   color:black;
-  padding:6px 19px;
-  font-size: 7px;
+  padding:15px 42px;
+  font-size: 17px;
   border: none;
-  border-radius: 4px;
-  align-items: center;
+  border-radius: 7px;
+  
 }
 .premium{
-  font-size: 15px;
+  font-size: 35px;
   font-weight: 600;
   color: white;
   text-align: center;
-  margin-bottom: 25px;
+  margin-top:80px ;
+  margin-bottom: 65px;
 }
 .multiple-device{
   display: grid;
-  /*grid-template-columns: 190px 190px 190px 190px;*/
-  grid-template-columns: 135px 135px 135px 135px;
+  grid-template-columns: 190px 190px 190px 190px;
+  justify-content: space-between;
   text-align: center;
+  
   color: white;
-  margin-bottom: 70px;
-
+  margin-bottom: 12%;
+   margin-left: 25px;
+   margin-right: 15%;
 }
 .unlimited-movie{
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 0;
+  text-align: start;
 }
 .enjoy-watching{
-  font-size:7px ;
+  font-size:16px ;
+  line-height: 0;
+  text-align: start;
 }
-.trial{
-  background-image: url(../image/cta-bg.jpg);
-  background-repeat: no-repeat;
-  padding: 22px;
-  display: grid;
- /* grid-template-columns:250px 450px ;*/
-  grid-template-columns:160px 350px ;
-  text-align: center;
-}
+
 .cloud-img img{
-  width: 20px;
+  width: 60px;
   border-radius: 30px;
-  padding: 10px;
+  padding: 14px;
   background-color:yellow;
   margin-left: 40px;
   display: flex;
   border: none;
 }
 .restart-mentorship{
-  font-size: 5px;
+  font-size: 14px;
   color: black;
+  align-items: center;
+}
+
+.trial{
+  background-image: url(../image/cta-bg.jpg);
+  background-repeat: no-repeat;
+  padding:50px 50px;
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  column-gap: 30px;
+  row-gap: 50px;
+  line-height: 0;
+  margin-bottom: 0px;
+  
 }
 .first-30days{
-  font-size: 8px;
+  font-size:25px;
   font-weight: 800;
   color: rgb(37, 36, 36);
-  margin-bottom: 4px;
+  
+  
 }
 .input-element{
-  padding: 4px;
-  padding-right: 100px;
+  padding-right: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 5px;
   border: none;
 }
 .input-element::placeholder{
-  font-size: 7px;
+  font-size: 17px;
 }
 .input-element:focus{
   outline: none;
 }
 .input-button{
   margin-right: 0px;
-  padding:6px ;
+  padding:22px ;
   border-radius: 5px;
   border: none;
   background-color: rgb(20, 20, 20);
   color: yellow;
-  font-size: 6px;
-  font-weight: 800;
+  font-size: 8px;
+  font-weight: 700;
 }
 .footer-stream{
   font-size: 50px;
@@ -693,8 +772,8 @@ padding-right: 40px;
   display: flex;
   margin: 5px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 6px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
 }
 .fot-links nav a:hover{
   color: yellow;
@@ -706,11 +785,15 @@ padding-right: 40px;
    justify-content: flex-start;
 }
 .fot-logo img{
-  width: 30px;
+  width: 50px;
+  
+  align-items: center;
 }
 .fot-logo span{
  color: white;
- font-size: 12px;
+ font-size: 24px;
+ font-weight: 700;
+ margin-left: 9px;
 }
 .secCointainer{
   display: flex;
@@ -719,6 +802,7 @@ padding-right: 40px;
   margin-bottom: px;
   margin-left: 20px;
 }
+
 .line-through{
   padding-left: 92%;
   margin-left: 30px;
@@ -739,24 +823,24 @@ padding-right: 40px;
   color: rgb(235, 233, 233);
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 5px;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 30px;
+  font-size: 12px;
 }
 
 .social-media-logo img{
-  width: 12px;
+  width: 17px;
   border-radius: 8px;
   margin: 4px;
 }
 .all{
   background-color: black;
-  padding-top: 30px;
-  padding-bottom: 1px;
+  padding-top: 5%;
+  padding-bottom: 15px;
 }
 .reserved{
   color: yellow;
-  font-size: 6px;
+  font-size: 12px;
   font-weight: 300;
 }
 .general-footer{
@@ -769,29 +853,397 @@ padding-right: 40px;
   color: white;
   font-size: 2px;
   padding-bottom: 8px;
-  padding-top: 8px;
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1px;
-  margin-bottom: 25px;
+  margin-top: 29px;
+  margin-bottom: 75px;
   margin-right: 20px;
 }
 
 .general-footer img{
-  height: 9px;
+  height: 19px;
 }
 footer{
   color: white;
-  font-size: 6px;
-  padding-bottom: 6px;
-  padding-top: 8px;
+  font-size: 13px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-left: 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 footer span{
-  font-size: 2px;
+  font-size: 12px;
+}
+.unlimited-movi{
+flex-direction:column;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 0;
+  text-align: start;
+  color: white;
 }
 
 
+.handbuger-menue{
+  display: none;
+}
+
+.arrow{
+  position: relative;
+}
+
+
+@media (max-width:763px) {
+  .container{
+    height:50vh;
+    background-position:center;
+    padding-left: 15px;
+    padding-bottom: 129%;
+    padding-top: 20px;
+  
+  }
+  
+  .flex{
+    font-size: 19px;
+    line-height: 0;
+    margin-top:0px;
+  }
+  
+  .linkss{
+    display: none;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0px;
+    padding-top: 30%;
+    right: 0px;
+    bottom: 0;
+    background-color:gray;
+
+  }
+  .linkss nav ul {
+  display: block;
+  
+}
+  
+
+  .hambugerSelect{
+    display: flex;
+    margin-right: 7px;
+    align-items: center;
+  }
+
+  .handbuger-menue{
+    display: block;
+   color: white;
+   background-color: blac;
+   font-size: 12px;
+   width: 20px;
+   height: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   cursor: pointer;
+  }
+  
+  .span1, .span2, .span3{
+  font-size: 1px;
+  border-bottom: 1px solid rgb(206, 187, 187);
+  }
+  
+
+  .container img{
+    width: 40px;
+  }
+  .fs{
+    font-size: 18px;
+    margin-top: 20%;
+  }
+  .unlimitedOffer{
+   font-size: 39px;
+  width: 100%;
+  line-height: 35px;
+    
+  }
+  .pg,.hd{
+   font-size: 9px;
+   margin-bottom: 8px;
+  }
+  .romance{
+    display: flex;
+    font-size: 13px;
+    margin-left: 0;
+  }
+  .year{
+    margin-left: 0;
+    font-size: 13px;
+  }
+  .watch{
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .onlineStreaming{
+    font-size: 10px;
+    font-weight: 750;
+    margin-left: 30px;
+  }
+  .upcoming{
+    font-size: 27px;
+    margin-left: 5px;
+
+  }
+  .streamingButtons{
+    flex-direction: column;
+    margin-left: 27px;
+  }
+  .buttonsDivs, .buttonsDiv, .buttonsDiv3{
+    font-size: 10px;
+  }
+  .streams{
+    grid-template-columns: 1fr 1fr;
+  }
+  .streams-name{
+    font-size: 12px;
+  }
+  .stream-num{
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .type{
+    font-size: 11px;
+  }
+  .num{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .service-general{
+    grid-template-columns: 1fr;
+  }
+  .ourService{
+    width: 59%;
+  }
+  .btn-download span{
+  padding-top: 10px;
+  font-size: 9px;
+  }
+  .servicePara{
+    font-size: 12px;
+  }
+  .download{
+    font-size: 25px;
+  }
+  .offline{
+    font-size: 25px;
+  }
+  .elevate{
+    font-size: 16px;
+  }
+  .enjoy{
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .immerse{
+    font-size: 16px;
+  }
+  .watchss{
+     font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .magic{
+    font-size: 16px;
+  }
+
+  .on-streaming{
+  font-size: 12px;
+  font-weight: 700;
+  }
+  .top-rated{
+    font-size: 25px;
+  }
+  .best-series{
+    font-size: 11px;
+  }
+  .world-series{
+    font-size: 26px;
+  }
+  .pricing-plans{
+    font-size: 11px;
+  }
+  .get-premium{
+    font-size: 24px;
+  }
+  .monthly{
+    font-size: 15px;
+  }
+  .yearly{
+    font-size: 15px;
+  }
+  .basic-standard-streaming{
+    grid-template-columns: 350px ;
+  align-content: center;
+
+   
+  }
+
+  .premium{
+    font-size: 28px;
+  }
+
+
+.standard{
+  font-size: 21px;
+}
+
+.better-result{
+  font-size: 13px;
+}
+.dollar{
+  font-size: 25px;
+}
+.dollar span{
+  font-size: 16px;
+  font-weight: 700;
+}
+.free-streaming, .video-quality, .signin, .movie-download{
+  font-size: 16px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+.casting{
+  font-size:18px;
+   padding-left: 80px;
+  padding-right: 50px;
+}
+.get-started{
+  margin-bottom: 48px;
+  font-size: 13px;
+}
+.multiple-device{
+  grid-template-columns: 1fr 1fr;
+  column-gap: 39px;
+  row-gap: 19px;
+  margin-bottom: 100px;
+}
+.unlimited-movie{
+   font-size: 15px;
+   padding-bottom: 2px;
+}
+.enjoy-watching{
+  font-size: 12px;
+}
+.trial{
+  grid-template-columns:1fr ;
+  column-gap: 0px;
+  row-gap: 0px;
+  padding-bottom: 25px;
+  padding-top: 19px;
+  background-color: none;
+  
+}
+.first-30days{
+  font-size: 16px;
+  font-weight: 800;
+  padding-bottom: 5px;
+}
+.restart-mentorship{
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.input-element{
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 25%;
+  padding-left: 10px;
+}
+.input-button{
+  padding: 13px 10px;
+  margin-top: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.secCointainer{
+  flex-direction: column;
+  margin-top: 40px;
+  
+}
+.fot-links nav a{
+  font-size: 9px;
+}
+.footer{
+  flex-direction: column;
+  margin-top: 0;
+}
+.social-media-logo{
+  margin-top: 19px;
+}
+  .input-fields{
+  display: flex;
+}
+}
+
+
+@media (max-width:400px){
+  .streams{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .streams-name{
+    font-size: 15px;
+  }
+  .immerse{
+    font-size: 18px;
+  }
+  .magic{
+    font-size: 18px;
+  }
+  .elevate{
+    font-size: 18px;
+  }
+ .online-buttons{
+  display: grid;
+  grid-template-columns: 170px 170px;
+  margin-bottom: 29px;
+ }
+.online-buttons button{
+  margin: 6px;
+  padding: 11px;
+}
+  .multiple-device{
+    grid-template-columns: 1fr;
+  }
+ .cloud-img img{
+  margin-left: 0px;
+ }
+.get-premium{
+ font-size: 23px;
+ }
+ .basic-standard-streaming{
+ grid-template-columns: 300px;
+ }
+ .free-streaming, .video-quality, .signin, .movie-download{
+  font-size: 12px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+.casting{
+  font-size:13px;
+   padding-left: 80px;
+  padding-right: 50px;
+}
+ .trial{
+  grid-template-columns:300px ;
+}
+  .input-fields{
+  display: flex;
+}
+}

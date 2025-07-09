@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="../style/signup.css" />
+</head>
+<body>
+  <div class="login-page">
+    <h2 class="login-title">Welcome Back</h2>
+    <p class="login-subtext">Please log in to continue</p>
+
+    <input class="email-input" type="email" placeholder="Email" required />
+    <input class="password-input" type="text" placeholder="Password" />
+    <button onclick="loginPage()" class="login-button">Login</button>
+
+    <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+
+  <script>
+    function loginPage() {
+      let emailInput = document.querySelector(".email-input");
+      let passwordInput = document.querySelector(".password-input");
+
+      let emailValue = emailInput.value.trim();
+      let passwordValue = passwordInput.value.trim();
+
+      let emailGetStorage = localStorage.getItem("emailName");
+      let passwordGetStorage = localStorage.getItem("password");
+
+      if (emailValue === emailGetStorage && passwordValue === passwordGetStorage) {
+        alert("Login successful!");
+        window.location.href = "../index.html";  // redirect after login
+      } else {
+        alert("Please input a valid email and password");
+      }
+
+      emailInput.value = "";
+      passwordInput.value = "";
+    }
+  </script>
+</body>
+</html>

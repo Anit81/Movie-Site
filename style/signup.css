@@ -1,131 +1,147 @@
-*{
+
+* {
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.begining{
-  color: rgb(219, 219, 33);
-  font-size:11px;
-  font-weight: 650;
-  padding-bottom: 10px;
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
-.create-accounts{
-color: rgb(22, 19, 19);
-  font-weight: 560;
-}
-.movie-tv{
-  font-size: 8px;
-  color: rgb(36, 35, 35);
-  padding-bottom: 30px;
-}
-.email-sign{
-  background-color: white;
-  padding-top: 10px;
-}
-.inputss1, .inputss2, .inputss3{
-  display: block;
-  padding: 13px;
-  width: 90%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid rgb(206, 187, 187);
 
+/* Shared input styles */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s;
 }
-.inputss1, .inputss2, .inputss3:focus{
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  background-color: #2a2a2a;
   outline: none;
 }
 
-.inputss1, .inputss2, .inputss3::placeholder{
-font-size: 8px;
-background-color: (206, 187, 187);
-}
-.create-account{
-  display: block;
-  margin-top: 15px;
-  background-color: rgb(5, 4, 4);
+/* Shared button style */
+.create-account,
+.login-button {
+  width: 100%;
+  background-color: #e50914;
   color: white;
-  padding-bottom:9px ;
-  padding-top:9px ;
-  width: 90%;
+  padding: 12px;
   border: none;
   border-radius: 8px;
-  font-size: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
-.already{
-  color: black;
-  font-size: 8px;
-  text-align: center;
-  margin-top: 6px;
-  margin-bottom: 13px;
-}
-.instead-use1{
-  padding-left: 40%;
-  font-size: 1px;
-  border-bottom: 1px solid rgb(206, 187, 187);
-  text-align: center;
-}
-.instead-use3{
-  padding-left: 45%;
-  font-size: 1px;
-  border-bottom: 1px solid rgb(206, 187, 187);
-  text-align: center;
-}
-.instead-use2{
-font-size: 8px;
-text-align: center;
-}
-.backImg{
-  background-image: url(../image/cv.jpg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position: cover;
-  padding: 10px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  
-}
-.email-img{
-width: 90%;
-  border-radius: 20px;
- 
-}
-.email-page{
-  display: grid;
-  grid-template-columns: 220px 240px;
-  padding-right: 70px;
-  padding-left: 70px;
-}
-.discovery{
-  color: white;
-  font-weight: 700;
-  font-size: 9px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-}
-.incredible{
-  color: rgb(250, 244, 244);
-  font-size: 6.3px;
-  padding-left: 14px;
-  padding-bottom: 17px;
-  font-weight: 800;
-}
-button{
-  
-  background-color: rgb(19, 18, 18);
-  color: white;
-  font-size: 7px;
-  margin-left: 25px;
-  padding-top:5px;
-  padding-bottom: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 10px;
-  border: 1px solid white;
 
-  
+.create-account:hover,
+.login-button:hover {
+  background-color: #ff1c1c;
 }
-.
 
-  
- 
+/* ========== SIGNUP PAGE STYLES ========== */
+.email-page {
+  background-color: #121212;
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+.begining {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.create-accounts {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.movie-tv {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.already {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.already a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.already a:hover {
+  text-decoration: underline;
+}
+
+/* ========== LOGIN PAGE STYLES ==========*/ 
+.login-page {
+  background-color: #121212;
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 2rem;
+  color: #e50914;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-subtext {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
