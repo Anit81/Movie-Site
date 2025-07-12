@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>login Page</title>
+  <link rel="stylesheet" href="../style/signup.css" />
+</head>
+<body>
+  <div class="email-page">
+    <div>
+      <p class="begining">FLEXSTREAM</p>
+      <p class="create-accounts">Create an account</p>
+      <p class="movie-tv">Get access to exclusive movies and TV shows</p>
+
+      <input class="inputss1 user-input" type="text" placeholder="Username" />
+      <input class="inputss2 email-input" type="email" placeholder="Email" required />
+      <input class="inputss3 password-input" type="text" placeholder="Password" />
+
+      <button onclick="inputGeneral()" class="create-account">Create account</button>
+
+      <div class="already">
+        <span>Already have an account? <a href="../inputdetails/login.html">Log in</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function inputGeneral() {
+      let userInput = document.querySelector(".user-input");
+      let emailInput = document.querySelector(".email-input");
+      let passwordInput = document.querySelector(".password-input");
+     
+      let userValue = userInput.value.trim();
+      let emailValue = emailInput.value.trim();
+      let passwordValue = passwordInput.value.trim();
+
+      let emailCheck = emailValue.includes("@") && emailValue.includes(".");
+
+      if (userValue === "" || emailValue === "" || passwordValue === "") {
+        alert("Please fill all form fields");
+        return;
+      }
+
+      if (!emailCheck) {
+        alert("Please enter a valid email address");
+        return;
+      }
+
+      // Save to localStorage
+      localStorage.setItem("name", userValue);
+      localStorage.setItem("emailName", emailValue);
+      localStorage.setItem("password", passwordValue);
+
+      alert("Account created successfully");
+
+      // Redirect to index.html
+      window.location.href = "../inputdetails/home.html";
+
+      
+      userInput.value = "";
+      emailInput.value = "";
+      passwordInput.value = "";
+    }
+  </script>
+</body>
+</html>
