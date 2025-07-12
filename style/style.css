@@ -1192,6 +1192,18 @@ flex-direction:column;
 
 
 @media (max-width:400px){
+  .container{
+    height:100vh;
+    background-position:center;
+    padding-left: 15px;
+    padding-bottom: 129%;
+    padding-top: 20px;
+  
+  }
+  .watch{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .streams{
     display: grid;
     grid-template-columns: 1fr;
@@ -1246,4 +1258,13 @@ flex-direction:column;
   .input-fields{
   display: flex;
 }
+.general-footer img{
+  height: 15px;
+}
+.reserved{
+  color: yellow;
+  font-size: 8px;
+
+}
+
 }
