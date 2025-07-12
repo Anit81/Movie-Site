@@ -15,7 +15,7 @@
     <input class="password-input" type="text" placeholder="Password" />
     <button onclick="loginPage()" class="login-button">Login</button>
 
-    <p class="signup-link">Don't have an account? <a href="index.html">Sign up</a></p>
+    <p class="signup-link">Don't have an account? <a href="../inputdetails/index.html">Sign up</a></p>
   </div>
 
   <script>
@@ -31,7 +31,7 @@
 
       if (emailValue === emailGetStorage && passwordValue === passwordGetStorage) {
         alert("Login successful!");
-        window.location.href = "../home.html";  // redirect after login
+        window.location.href = "../inputdetails/home.html";  // redirect after login
       } else {
         alert("Please input a valid email and password");
       }
