@@ -1269,3 +1269,161 @@ flex-direction:column;
 }
 
 }
+
+@media (max-width:390px){
+  .container{
+    height:100vh;
+    background-position:center;
+    padding-left: 15px;
+    padding-bottom: 129%;
+    padding-top: 20px;
+  
+  }
+  .watch{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .streams{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .streams-name{
+    font-size: 15px;
+  }
+  .immerse{
+    font-size: 18px;
+  }
+  .magic{
+    font-size: 18px;
+    font-weight: 100px;
+  }
+  .elevate{
+    font-size: 18px;
+  }
+ .online-buttons{
+  display: grid;
+  grid-template-columns: 170px 170px;
+  margin-bottom: 29px;
+ }
+.online-buttons button{
+  margin: 6px;
+  padding: 11px;
+}
+  .multiple-device{
+    grid-template-columns: 1fr;
+  }
+ .cloud-img img{
+  margin-left: 0px;
+ }
+.get-premium{
+ font-size: 23px;
+ }
+ .basic-standard-streaming{
+ grid-template-columns: 300px;
+ }
+ .free-streaming, .video-quality, .signin, .movie-download{
+  font-size: 12px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+.casting{
+  font-size:13px;
+   padding-left: 80px;
+  padding-right: 50px;
+}
+ .trial{
+  grid-template-columns:300px ;
+}
+  .input-fields{
+  display: flex;
+}
+.general-footer img{
+  height: 15px;
+}
+.reserved{
+  color: yellow;
+  font-size: 8px;
+
+}
+
+}
+
+@media (max-width:300px){
+  .container{
+    height:100vh;
+    background-position:center;
+    padding-left: 15px;
+    padding-bottom: 129%;
+    padding-top: 20px;
+  
+  }
+  .watch{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .streams{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .streams-name{
+    font-size: 15px;
+  }
+  .immerse{
+    font-size: 18px;
+  }
+  .magic{
+    font-size: 18px;
+    font-weight: 100px;
+  }
+  .elevate{
+    font-size: 18px;
+  }
+ .online-buttons{
+  display: grid;
+  grid-template-columns: 170px 170px;
+  margin-bottom: 29px;
+ }
+.online-buttons button{
+  margin: 6px;
+  padding: 11px;
+}
+  .multiple-device{
+    grid-template-columns: 1fr;
+  }
+ .cloud-img img{
+  margin-left: 0px;
+ }
+.get-premium{
+ font-size: 23px;
+ }
+ .basic-standard-streaming{
+ grid-template-columns: 300px;
+ }
+ .free-streaming, .video-quality, .signin, .movie-download{
+  font-size: 12px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+.casting{
+  font-size:13px;
+   padding-left: 80px;
+  padding-right: 50px;
+}
+ .trial{
+  grid-template-columns:300px ;
+}
+  .input-fields{
+  display: flex;
+}
+.general-footer img{
+  height: 15px;
+}
+.reserved{
+  color: yellow;
+  font-size: 8px;
+
+}
+
+}
