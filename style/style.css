@@ -10,7 +10,7 @@ body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+ 
 
 
 }
@@ -275,6 +275,7 @@ select{
   font-weight: 800;
 }
 
+
 .btn-download{
   background-color: yellow;
   border: none;
@@ -282,13 +283,16 @@ select{
   padding-top: 15px;
   margin-left: 10px;
   margin-right: 5px;
-}
+} 
 .jpeg{
 align-items: center;
 text-align: center;
 justify-content: center;
 }
-
+/*.btn-download span{
+  display: flex;
+  flex-direction: column;
+}
 .btn-download span{
  display: flex;
  padding-left: 25px;
@@ -298,8 +302,8 @@ justify-content: center;
  font-size: 12px;
  padding-top: 10px;
  border: none;
-
-}
+}  
+ */
 .service-span{
   background-color:  yellow;
   padding-left: 20px;
@@ -332,9 +336,9 @@ grid-template-columns: 1fr 1fr;
  
 }
 
-.download-icon{
+/*.download-icon{
   width: 10px;
-}
+} */
 .download, .offline{
   font-size:37px ;
   color: white;
@@ -502,6 +506,8 @@ grid-template-columns: 1fr 1fr;
 }
 
 /* for styling the bob toggle switch*/
+*/
+
 
 .annually {
   display: flex;
@@ -1270,160 +1276,3 @@ flex-direction:column;
 
 }
 
-@media (max-width:390px){
-  .container{
-    height:100vh;
-    background-position:center;
-    padding-left: 15px;
-    padding-bottom: 129%;
-    padding-top: 20px;
-  
-  }
-  .watch{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .streams{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .streams-name{
-    font-size: 15px;
-  }
-  .immerse{
-    font-size: 18px;
-  }
-  .magic{
-    font-size: 18px;
-    font-weight: 100px;
-  }
-  .elevate{
-    font-size: 18px;
-  }
- .online-buttons{
-  display: grid;
-  grid-template-columns: 170px 170px;
-  margin-bottom: 29px;
- }
-.online-buttons button{
-  margin: 6px;
-  padding: 11px;
-}
-  .multiple-device{
-    grid-template-columns: 1fr;
-  }
- .cloud-img img{
-  margin-left: 0px;
- }
-.get-premium{
- font-size: 23px;
- }
- .basic-standard-streaming{
- grid-template-columns: 300px;
- }
- .free-streaming, .video-quality, .signin, .movie-download{
-  font-size: 12px;
-  padding-left: 80px;
-  padding-right: 50px;
-}
-.casting{
-  font-size:13px;
-   padding-left: 80px;
-  padding-right: 50px;
-}
- .trial{
-  grid-template-columns:300px ;
-}
-  .input-fields{
-  display: flex;
-}
-.general-footer img{
-  height: 15px;
-}
-.reserved{
-  color: yellow;
-  font-size: 8px;
-
-}
-
-}
-
-@media (max-width:300px){
-  .container{
-    height:100vh;
-    background-position:center;
-    padding-left: 15px;
-    padding-bottom: 129%;
-    padding-top: 20px;
-  
-  }
-  .watch{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .streams{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .streams-name{
-    font-size: 15px;
-  }
-  .immerse{
-    font-size: 18px;
-  }
-  .magic{
-    font-size: 18px;
-    font-weight: 100px;
-  }
-  .elevate{
-    font-size: 18px;
-  }
- .online-buttons{
-  display: grid;
-  grid-template-columns: 170px 170px;
-  margin-bottom: 29px;
- }
-.online-buttons button{
-  margin: 6px;
-  padding: 11px;
-}
-  .multiple-device{
-    grid-template-columns: 1fr;
-  }
- .cloud-img img{
-  margin-left: 0px;
- }
-.get-premium{
- font-size: 23px;
- }
- .basic-standard-streaming{
- grid-template-columns: 300px;
- }
- .free-streaming, .video-quality, .signin, .movie-download{
-  font-size: 12px;
-  padding-left: 80px;
-  padding-right: 50px;
-}
-.casting{
-  font-size:13px;
-   padding-left: 80px;
-  padding-right: 50px;
-}
- .trial{
-  grid-template-columns:300px ;
-}
-  .input-fields{
-  display: flex;
-}
-.general-footer img{
-  height: 15px;
-}
-.reserved{
-  color: yellow;
-  font-size: 8px;
-
-}
-
-}
